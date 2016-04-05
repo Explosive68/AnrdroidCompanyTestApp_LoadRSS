@@ -101,12 +101,12 @@ public class RssActivity extends ListActivity {
                 e.printStackTrace();
             } catch (IllegalArgumentException e) {
                 e.printStackTrace();
-                Toast.makeText(RssActivity.this, "Can't connect to the URL", Toast.LENGTH_SHORT).show();
+                /*Toast.makeText(RssActivity.this, "Can't connect to the URL", Toast.LENGTH_SHORT).show();
                 try {
                     wait(500);
                 } catch (InterruptedException e1) {
                     e1.printStackTrace();
-                }
+                }*/
                 Intent intent = new Intent(RssActivity.this,MainActivity.class);
                 startActivity(intent);
             }
